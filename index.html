@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./Images/favicon (3).ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Stint+Ultra+Condensed&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <title>Darshan Kumar — Portfolio</title>
+</head>
+
+<body>
+
+  <main>
+    <div class="loader pointer-events-none h-screen w-full fixed top-0 left-0 z-[700]">
+      <div class="namaste text-center absolute z-[5] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <h2 class="text-white text-[7.5vw] md:text-[3vw] leading-[1.3]">
+          سلام
+        </h2>
+        <h3 class="text-white text-[5vw] md:text-[2vw] leading-[1]">
+          salam
+        </h3>
+      </div>
+      <div
+        class="loadingtext opacity-0 text-center absolute z-[5] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <h2 class="counter text-white text-[5.5vw] md:text-[2vw] leading-[1.2]">
+          0%
+        </h2>
+        <h3 class="text-white text-[6vw] md:text-[2.5vw] leading-[1.1] mt-[1.5vw] md:mt-[0.8vw]">
+          Designed. Coded. Loved.<span> By Darshan Kumar.</span>
+        </h3>
+        <div class="underline h-[0.8vw] md:h-[0.2vw] w-[0%] bg-white"></div>
+      </div>
+      <div class="overlay h-full w-full absolute top-0 left-0 z-[2] flex">
+        <div class="colordiv h-full w-[20%] bg-[#242A23]"></div>
+        <div class="colordiv h-full w-[20%] bg-[#242A23]"></div>
+        <div class="colordiv h-full w-[20%] bg-[#242A23]"></div>
+        <div class="colordiv h-full w-[20%] bg-[#242A23]"></div>
+        <div class="colordiv h-full w-[20%] bg-[#242A23]"></div>
+      </div>
+    </div>
+    <div class="projects-overlay hidden h-screen w-full fixed pointer-event-none top-0 left-0 z-[400]">
+      <div
+        class="infoverview flex md:flex-row flex-col px-[2vw] md:px-[1.5vw] py-[4vw] md:py-[2vw] h-full w-full absolute top-0 left-0 z-[2]">
+        <div class="left-part h-[48%] md:h-full w-full md:w-[44%]">
+          <div
+            class="buttondiv w-fit closeBtn border border-white cursor-pointer px-[3vw] md:px-[2vw] py-[1.5vw] md:py-[0.65vw]">
+            <div class="links cursor-pointer h-[1rem] md:h-[1.3rem] overflow-hidden">
+              <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">
+                Return To home
+              </h2>
+              <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">
+                Return To home
+              </h2>
+            </div>
+          </div>
+          <div class="heading mt-[2.5vw] md:mt-[1.5vw]">
+            <h3 class="projecttitle text-[14vw] md:text-[7.6vw] leading-[1] text-white">
+              Astrarise
+            </h3>
+            <div class="subheading flex items-center gap-[3vw] md:gap-[2vw]">
+              <div class="year">
+                <h2 class="projectyear text-white text-[4vw] leading-[1.1] md:text-[2vw]">
+                  2026
+                </h2>
+              </div>
+              <div class="shortdescription">
+                <h4 class="projectshorttag text-white text-[3vw] leading-[1] md:text-[1.3vw]">
+                  A galaxy you can feel, not just see.
+                </h4>
+              </div>
+            </div>
+            <div class="livelink mt-[3vw] md:mt-[1vw]">
+              <a target="_blank" href="">
+                <div
+                  class="buttondiv w-fit border border-white cursor-pointer px-[3vw] md:px-[2vw] py-[1.5vw] md:py-[0.65vw] bg-[#242A23]">
+                  <div class="links cursor-pointer h-[1rem] overflow-hidden">
+                    <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">
+                      live link
+                    </h2>
+                    <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">
+                      live link
+                    </h2>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="projectflip mt-[2.7vw] md:mt-[1.5vw] h-[55%] w-full">
+            <div class="project-img overflow-hidden h-full w-full"></div>
+          </div>
+        </div>
+        <div class="right-part h-[52%] md:h-full flex items-end w-full md:w-[56%]">
+          <div class="right-part-wrapper px-[2vw]">
+            <div class="description">
+              <h2 class="text-white text-[5.5vw] md:text-[2.5vw]">
+                description
+              </h2>
+              <h4 class="text-[2.5vw] md:text-[1.2vw] mt-[1.3vw] text-white leading-[1.2]">
+                AstraRise was my first step into the world of creative web
+                experiments, and also my first recognized work on Awwwards. I
+                wanted to build something that felt alive, something that
+                breathes when you interact with it. That's how AstraRise was
+                born — a digital galaxy that reacts, moves, and shifts with
+                every touch. The site lets you explore space through motion —
+                twist the colors, adjust the density of stars, and shape your
+                own universe in real time. It's built using Three.js for 3D
+                visualization, GSAP for animation, and Tailwind CSS for a
+                clean, fluid design. AstraRise isn't just a visual experiment;
+                it's a personal milestone — the project that taught me how
+                imagination can become recognition.
+              </h4>
+            </div>
+            <div
+              class="techstackandhighlights mt-[4vw] md:mt-[2vw] h-[25vh] md:h-[20vh] w-full flex md:flex-row flex-col">
+              <div class="techstack flex flex-row md:flex-col justify-between h-[50%] md:h-full w-full md:w-[35%]">
+                <h2 class="text-white text-[4.5vw] md:text-[1.8vw]">
+                  tech Stack
+                </h2>
+                <div class="tech flex mt-[1.5vw] flex-col gap-[0.2vw]">
+                  <h4 class="text-white text-[2.5vw] md:text-[0.8vw] leading-[1.1]">
+                    HTML
+                  </h4>
+                  <h4 class="text-white text-[2.5vw] md:text-[0.8vw] leading-[1.1]">
+                    Tailwind CSS
+                  </h4>
+                  <h4 class="text-white text-[2.5vw] md:text-[0.8vw] leading-[1.1]">
+                    GSAP
+                  </h4>
+                  <h4 class="text-white text-[2.5vw] md:text-[0.8vw] leading-[1.1]">
+                    Three.js
+                  </h4>
+                </div>
+              </div>
+              <div class="highlights flex flex-row md:flex-col justify-between h-[50%] md:h-full w-full w-[65%]">
+                <h2 class="text-white text-[4.5vw] md:text-[1.8vw]">
+                  highlights
+                </h2>
+                <div class="tech flex mt-[1.5vw] flex-col gap-[1vw] md:gap-[0.4vw]">
+                  <h4 class="text-white text-[2.5vw] md:text-[1vw] leading-[1.1]">
+                    Interactive control panel for real-time galaxy
+                    customization
+                  </h4>
+                  <h4 class="text-white text-[2.5vw] md:text-[1vw] leading-[1.1]">
+                    3D motion and space simulation built using Three.js
+                  </h4>
+                  <h4 class="text-white text-[2.5vw] md:text-[1vw] leading-[1.1]">
+                    Seamless animations powered by GSAP
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projectoverlay h-full w-full absolute top-0 left-0 flex">
+        <div class="colordivs h-full w-[20%] bg-[#242A23]"></div>
+        <div class="colordivs h-full w-[20%] bg-[#242A23]"></div>
+        <div class="colordivs h-full w-[20%] bg-[#242A23]"></div>
+        <div class="colordivs h-full w-[20%] bg-[#242A23]"></div>
+        <div class="colordivs h-full w-[20%] bg-[#242A23]"></div>
+      </div>
+    </div>
+    <nav
+      class="navbar px-[2vw] md:px-[1.5vw] h-[10vh] md:h-[16vh] w-full fixed z-[100] top-0 left-0 flex items-center justify-between">
+      <div class="name flex flex-col">
+        <div class="fullName">
+          <h3 class="text-[6vw] md:text-[2.3vw] leading-[1] text-white">
+            Darshan Kumar
+          </h3>
+        </div>
+        <div class="year">
+          <h2 class="text-[4.2vw] md:text-[1.6vw] text-[#C5E0F1] leading-[1]">
+            Portfolio'26
+          </h2>
+        </div>
+      </div>
+      <div class="mobilenav md:hidden">
+        <a href="./darshan_kumar_resume (1) (1).pdf" download="Darshan_Kumar_Resume.pdf">
+          <div class="buttondiv border border-white cursor-pointer px-[4vw] py-[1.5vw] bg-[#242A23]">
+            <div class="links cursor-pointer h-[1rem] overflow-hidden">
+              <h2 class="text-white text-[4vw] leading-[1]">Resume</h2>
+              <h2 class="text-white text-[4vw] leading-[1]">Resume</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="navlinks hidden md:flex items-center w-[32%] justify-between">
+        <div id="aboutlink" class="links cursor-pointer h-[1.3rem] overflow-hidden">
+          <h3 class="text-white text-[1.3vw] leading-[1]">About</h3>
+          <h3 class="text-white text-[1.3vw] leading-[1]">About</h3>
+        </div>
+        <div id="projectlink" class="links cursor-pointer h-[1.3rem] overflow-hidden">
+          <h3 class="text-white text-[1.3vw] leading-[1]">Projects</h3>
+          <h3 class="text-white text-[1.3vw] leading-[1]">Projects</h3>
+        </div>
+        <div id="explink" class="links cursor-pointer h-[1.3rem] overflow-hidden">
+          <h3 class="text-white text-[1.3vw] leading-[1]">Experience</h3>
+          <h3 class="text-white text-[1.3vw] leading-[1]">Experience</h3>
+        </div>
+        <div id="recolink" class="links cursor-pointer h-[1.3rem] overflow-hidden">
+          <h3 class="text-white text-[1.3vw] leading-[1]">Recognition</h3>
+          <h3 class="text-white text-[1.3vw] leading-[1]">Recognition</h3>
+        </div>
+        <div id="contactlink" class="links cursor-pointer h-[1.3rem] overflow-hidden">
+          <h3 class="text-white text-[1.3vw] leading-[1]">Contact</h3>
+          <h3 class="text-white text-[1.3vw] leading-[1]">Contact</h3>
+        </div>
+        <a href="./darshan_kumar_resume (1) (1).pdf" download="Darshan_Kumar_Resume.pdf">
+          <div class="buttondiv border border-white cursor-pointer px-[2vw] py-[0.65vw] bg-[#242A23]">
+            <div class="links cursor-pointer h-[1.3rem] overflow-hidden">
+              <h2 class="text-white text-[1.3vw] leading-[1]">Resume</h2>
+              <h2 class="text-white text-[1.3vw] leading-[1]">Resume</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+    </nav>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <div id="app " class="bg-[#242A23]">
+          <div class="page1 h-[200vh] w-full relative">
+            <div class="image-div h-screen overflow-hidden w-full">
+              <img data-speed="0.91" class="scaleImage h-screen w-full scale-[1.16] object-cover"
+                data-src="./Images/LandingPicture.png" alt="" />
+            </div>
+            <div class="upperdiv px-[2vw] md:px-[1.5vw] h-full w-full absolute top-0 left-0">
+              <div class="landing-div py-[1.5vw] flex items-end h-screen w-full">
+                <div
+                  class="bottomtext w-full pb-[6vw] md:pb-[0vw] flex md:flex-row flex-col items-stretch justify-between">
+                  <div class="maintext mb-[2.1vw] md:mb-[0vw] overflow-hidden">
+                    <h1 class="md:text-[7vw] text-[13vw] leading-[0.9] text-white">
+                      creative <span>coder & </span> <br />
+                      Full-Stack Developer.
+                    </h1>
+                  </div>
+                  <div class="subtext w-[90%] md:w-[32%] flex flex-col justify-between">
+                    <div class="uppertext">
+                      <h4 class="text-white text-[3.5vw] md:text-[1.17vw] leading-[1.05]">
+                        A developer who engineers scalable systems and
+                        real-time applications. I build things that don't
+                        just work — they perform under load, handle live
+                        data, and deliver results. For me, great software
+                        is about reliability, speed, and the people it serves.
+                      </h4>
+                      <h3 class="alagtext text-white text-[6vw] md:text-[2.5vw] leading-[1.1] mt-[2.5vw] md:mt-[0.8vw]">
+                        build things that <span>scale.</span>
+                      </h3>
+                    </div>
+                    <div class="buttons flex mt-[2.5vw] md:mt-[0vw] gap-[3vw] md:gap-[1.5vw]">
+                      <a href="mailto:darshankumad1234@gmail.com?subject=Let's%20Create%20Something%20Together"
+                        class="buttondiv border border-white cursor-pointer px-[4vw] md:px-[2vw] py-[1.5vw] md:py-[0.65vw]">
+                        <div class="links cursor-pointer h-[1rem] md:h-[1.3rem] overflow-hidden">
+                          <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">
+                            Let's Collaborate
+                          </h2>
+                          <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">
+                            Let's Collaborate
+                          </h2>
+                        </div>
+                      </a>
+                      <a href="mailto:darshankumad1234@gmail.com?subject=We%27d%20Love%20to%20Hire%20You"
+                        class="buttondiv border border-white cursor-pointer px-[4vw] md:px-[2vw] py-[1.5vw] md:py-[0.65vw] bg-[#242A23]">
+                        <div class="links cursor-pointer h-[1rem] md:h-[1.3rem] overflow-hidden">
+                          <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">
+                            Hire me
+                          </h2>
+                          <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">
+                            Hire me
+                          </h2>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="about" class="about py-[1.5vw] h-screen flex flex-col justify-end w-full">
+                <div class="uppertext">
+                  <h3 class="text-[10vw] md:text-[5.7vw] leading-[1.2] text-white">
+                    About <span>Me</span>
+                  </h3>
+                </div>
+                <div class="mainAbout h-[85vh] md:h-[70vh] w-full flex md:flex-row flex-col justify-between">
+                  <div class="aboutimg overflow-hidden h-[40%] md:h-full w-full md:w-[65%]">
+                    <img data-speed="0.8" class="h-full scale-[1.1] w-full object-cover"
+                      data-src="./Images/About-darshan.jpeg" alt="" />
+                  </div>
+                  <div
+                    class="abouttext py-[4.2vw] md:py-[0vw] md:h-full h-[60%] w-full md:w-[32%] flex flex-col justify-between">
+                    <div class="normalIntro flex flex-col gap-[2.5vw] md:gap-[1vw]">
+                      <h4 class="text-white leading-[1.25] text-[3.5vw] md:text-[1.23vw]">
+                        Hello, I'm Darshan Kumar, a Full-Stack Developer from
+                        Karachi, Pakistan, specializing in MERN and PERN stack.
+                        I build production-ready platforms — from mobile apps
+                        to enterprise systems — that are scalable and real-time.
+                      </h4>
+                      <h4 class="text-white leading-[1.25] text-[3.5vw] md:text-[1.23vw]">
+                        I've delivered 5+ production platforms across healthcare,
+                        hospitality, real estate, and enterprise domains — with
+                        real-time features powered by Socket.io, Kafka, Redis,
+                        and cloud deployments on Azure, Render, and Hostinger.
+                      </h4>
+                      <h4 class="text-white leading-[1.25] text-[3.5vw] md:text-[1.23vw]">
+                        I'm Microsoft Azure certified across three levels —
+                        AZ-900, AZ-204, and AZ-400 — and I'm always pushing
+                        deeper into cloud-native architecture, automation,
+                        and AI-driven workflows.
+                      </h4>
+                      <h4 class="text-white leading-[1.25] text-[3.5vw] md:text-[1.23vw]">
+                        Let's work together to build something fast, scalable,
+                        and built to last.
+                      </h4>
+                    </div>
+                    <div class="funfact">
+                      <h2 class="text-white text-[7vw] md:text-[2vw]">
+                        Fun Fact
+                      </h2>
+                      <h4 class="text-white leading-[1.22] text-[3.5vw] md:text-[1.23vw]">
+                        I hold three Microsoft Azure certifications — AZ-900,
+                        AZ-204, and AZ-400. When I'm not coding production
+                        systems, you'll find me diving into cloud architecture
+                        or building automation pipelines.
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="projects" class="page2 projects relative h-[70vh] md:h-screen w-full">
+            <div class="image-div h-screen overflow-hidden w-full">
+              <img data-speed="0.5" class="h-screen w-full scale-[1] object-cover" data-src="./Images/d4.png" alt="" />
+            </div>
+            <div
+              class="projectPreview absolute right-[1.5vw] top-[38%] translate-y-[-50%] h-[35%] md:h-[50%] w-full md:w-[44%] bg-red-300">
+              <div class="project-img h-full w-full">
+                <img class="h-full scale-[1.2] w-full object-cover" data-src="./Images/sentinel (2).png" alt="" />
+              </div>
+            </div>
+            <div
+              class="projectPreview absolute right-[1.5vw] top-[38%] translate-y-[-50%] h-[35%] md:h-[50%] w-full md:w-[44%] bg-green-300">
+              <div class="project-img h-full w-full">
+                <img class="h-full scale-[1.2] w-full object-cover" data-src="./Images/j1.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="projectPreview absolute right-[1.5vw] top-[38%] translate-y-[-50%] h-[35%] md:h-[50%] w-full md:w-[44%] bg-blue-300">
+              <div class="project-img h-full w-full">
+                <img class="h-full scale-[1.2] w-full object-cover" data-src="./Images/r1.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="projectPreview absolute right-[1.5vw] top-[38%] translate-y-[-50%] h-[35%] md:h-[50%] w-full md:w-[44%] bg-red-600">
+              <div class="project-img h-full w-full">
+                <img class="h-full scale-[1.2] w-full object-cover" data-src="./Images/n1.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="upperdiv px-[2vw] md:px-[1.5vw] py-[1.5vw] flex flex-col justify-end h-full w-full absolute top-0 left-0">
+              <div class="heading">
+                <h3 class="text-white pb-[4vw] md:pb-[0vw] leading-[1.05] text-[10vw] md:text-[6vw]">
+                  Selected <span>Projects</span>
+                </h3>
+              </div>
+              <div
+                class="mainprojectsdiv h-[30vh] md:h-[20vh] flex md:flex-row flex-col items-start md:items-center justify-between w-full">
+                <div class="lefttext h-[40%] w-full md:w-[32%]">
+                  <h4 class=”text-white text-[4vw] md:text-[1.23vw] leading-[1.25]”>
+                    Every project I build solves a real problem. It's not
+                    just about writing code — it's about architecting systems
+                    that handle scale, deliver in real time, and keep running
+                    reliably in production, long after launch.
+                  </h4>
+                </div>
+                <div
+                  class="projects flex h-[60%] md:h-full w-full md:w-[55%] items-center justify-start md:justify-end gap-[2.5vw] md:gap-[0.5vw]">
+                  <div class="projectBox cursor-pointer box1 h-[70%] w-[22%] md:w-[20%] bg-blue-400">
+                    <div class="project-img h-full w-full">
+                      <img class="h-full w-full object-cover" data-src="./Images/sentinel (2).png" alt="" />
+                    </div>
+                  </div>
+                  <div class="projectBox cursor-pointer box2 h-[70%] w-[22%] md:w-[20%] bg-blue-200">
+                    <div class="project-img h-full w-full">
+                      <img class="h-full w-full object-cover" data-src="./Images/j1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="projectBox cursor-pointer box3 h-[70%] w-[22%] md:w-[20%] bg-blue-400">
+                    <div class="project-img h-full w-full">
+                      <img class="h-full w-full object-cover" data-src="./Images/r1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="projectBox cursor-pointer box4 h-[70%] w-[22%] md:w-[20%] bg-blue-200">
+                    <div class="project-img h-full w-full">
+                      <img class="h-full w-full object-cover" data-src="./Images/n1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ── 1. Work Experience ── -->
+          <div id="experience" class="page-exp relative w-full">
+            <div class="absolute top-0 left-0 h-full w-full overflow-hidden">
+              <img data-speed="0.88" class="h-full w-full object-cover object-center" data-src="./Images/d6.png" alt=""
+                style="min-height:100%; transform:scale(1.12)" />
+            </div>
+            <div class="relative z-10 px-[2vw] md:px-[1.5vw] pt-[12vw] md:pt-[6vw] pb-[10vw] md:pb-[5vw]">
+              <div class="exp-title-wrap overflow-hidden mb-[8vw] md:mb-[4vw]">
+                <h3 class="exp-title text-white text-[10vw] md:text-[5.7vw] leading-[1.2]">Work <span>Experience</span>
+                </h3>
+              </div>
+              <div class="exp-list w-full flex flex-col">
+                <!-- Samarix -->
+                <div
+                  class="exp-entry flex flex-col md:flex-row md:justify-between border-t border-white/10 py-[6vw] md:py-[3vw]">
+                  <div class="exp-meta w-full md:w-[28%] mb-[4vw] md:mb-0 flex flex-col gap-[0.8vw] md:gap-[0.4vw]">
+                    <h2 class="text-white text-[5.5vw] md:text-[1.8vw] leading-[1]">Samarix</h2>
+                    <h4 class="text-white/40 text-[3.2vw] md:text-[0.95vw] tracking-wide">Hyderabad, Pakistan</h4>
+                    <h4 class="text-white/40 text-[3.2vw] md:text-[0.95vw] tracking-wide">2025 — Present</h4>
+                  </div>
+                  <div class="exp-body w-full md:w-[68%]">
+                    <h3 class="text-white text-[5.5vw] md:text-[2vw] leading-[1] mb-[3vw] md:mb-[1.5vw]">MERN Stack
+                      <span>Developer</span>
+                    </h3>
+                    <ul class="flex flex-col gap-[2.5vw] md:gap-[1vw]">
+                      <li class="exp-bullet flex gap-[1.5vw] md:gap-[0.7vw]">
+                        <span class="text-white/25 text-[3.5vw] md:text-[1.1vw] shrink-0 mt-[0.1vw]">—</span>
+                        <h4 class="text-white/65 text-[3.5vw] md:text-[1.1vw] leading-[1.5]">Delivered 5 production
+                          platforms covering mobile apps, web portals, rider apps, and admin dashboards using MERN
+                          stack, PostgreSQL, and Firebase.</h4>
+                      </li>
+                      <li class="exp-bullet flex gap-[1.5vw] md:gap-[0.7vw]">
+                        <span class="text-white/25 text-[3.5vw] md:text-[1.1vw] shrink-0 mt-[0.1vw]">—</span>
+                        <h4 class="text-white/65 text-[3.5vw] md:text-[1.1vw] leading-[1.5]">Engineered real-time
+                          features — live GPS tracking, order updates, and multi-role dashboards — using Socket.io;
+                          integrated Kafka for event-driven messaging and Redis for caching.</h4>
+                      </li>
+                      <li class="exp-bullet flex gap-[1.5vw] md:gap-[0.7vw]">
+                        <span class="text-white/25 text-[3.5vw] md:text-[1.1vw] shrink-0 mt-[0.1vw]">—</span>
+                        <h4 class="text-white/65 text-[3.5vw] md:text-[1.1vw] leading-[1.5]">Integrated Stripe, Twilio,
+                          FCM, SMTP, and MCP server; deployed across Hostinger, Render, and Azure with AWS Lambda and
+                          CI/CD via GitHub Actions.</h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- MedIQ -->
+                <div
+                  class="exp-entry flex flex-col md:flex-row md:justify-between border-t border-white/10 py-[6vw] md:py-[3vw]">
+                  <div class="exp-meta w-full md:w-[28%] mb-[4vw] md:mb-0 flex flex-col gap-[0.8vw] md:gap-[0.4vw]">
+                    <h2 class="text-white text-[5.5vw] md:text-[1.8vw] leading-[1]">MedIQ Smart Healthcare</h2>
+                    <h4 class="text-white/40 text-[3.2vw] md:text-[0.95vw] tracking-wide">Remote</h4>
+                    <h4 class="text-white/40 text-[3.2vw] md:text-[0.95vw] tracking-wide">Mar 2025 — Sep 2025</h4>
+                  </div>
+                  <div class="exp-body w-full md:w-[68%]">
+                    <h3 class="text-white text-[5.5vw] md:text-[2vw] leading-[1] mb-[3vw] md:mb-[1.5vw]">MERN Stack
+                      <span>Engineer</span>
+                    </h3>
+                    <ul class="flex flex-col gap-[2.5vw] md:gap-[1vw]">
+                      <li class="exp-bullet flex gap-[1.5vw] md:gap-[0.7vw]">
+                        <span class="text-white/25 text-[3.5vw] md:text-[1.1vw] shrink-0 mt-[0.1vw]">—</span>
+                        <h4 class="text-white/65 text-[3.5vw] md:text-[1.1vw] leading-[1.5]">Developed and maintained
+                          core healthcare platform features; reduced database query time by optimizing MongoDB
+                          aggregation pipelines.</h4>
+                      </li>
+                      <li class="exp-bullet flex gap-[1.5vw] md:gap-[0.7vw]">
+                        <span class="text-white/25 text-[3.5vw] md:text-[1.1vw] shrink-0 mt-[0.1vw]">—</span>
+                        <h4 class="text-white/65 text-[3.5vw] md:text-[1.1vw] leading-[1.5]">Improved REST API response
+                          times through query optimization and server-side caching strategies.</h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Bano Qabil -->
+                <div
+                  class="exp-entry flex flex-col md:flex-row md:justify-between border-t border-white/10 py-[6vw] md:py-[3vw]">
+                  <div class="exp-meta w-full md:w-[28%] mb-[4vw] md:mb-0 flex flex-col gap-[0.8vw] md:gap-[0.4vw]">
+                    <h2 class="text-white text-[5.5vw] md:text-[1.8vw] leading-[1]">Bano Qabil / Internee.pk</h2>
+                    <h4 class="text-white/40 text-[3.2vw] md:text-[0.95vw] tracking-wide">Karachi, Pakistan</h4>
+                    <h4 class="text-white/40 text-[3.2vw] md:text-[0.95vw] tracking-wide">Nov 2024 — Jun 2025</h4>
+                  </div>
+                  <div class="exp-body w-full md:w-[68%]">
+                    <h3 class="text-white text-[5.5vw] md:text-[2vw] leading-[1] mb-[3vw] md:mb-[1.5vw]">Frontend
+                      <span>Developer</span>
+                    </h3>
+                    <ul class="flex flex-col gap-[2.5vw] md:gap-[1vw]">
+                      <li class="exp-bullet flex gap-[1.5vw] md:gap-[0.7vw]">
+                        <span class="text-white/25 text-[3.5vw] md:text-[1.1vw] shrink-0 mt-[0.1vw]">—</span>
+                        <h4 class="text-white/65 text-[3.5vw] md:text-[1.1vw] leading-[1.5]">Built responsive React UIs
+                          with Tailwind CSS; developed reusable component libraries utilized across 3 organizations.
+                        </h4>
+                      </li>
+                      <li class="exp-bullet flex gap-[1.5vw] md:gap-[0.7vw]">
+                        <span class="text-white/25 text-[3.5vw] md:text-[1.1vw] shrink-0 mt-[0.1vw]">—</span>
+                        <h4 class="text-white/65 text-[3.5vw] md:text-[1.1vw] leading-[1.5]">Collaborated in agile
+                          teams, managed version control with Git, and resolved performance and UI bugs.</h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="border-t border-white/10"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── 2. Tech Skills ── -->
+          <div id="skills" class="page-skills relative w-full">
+            <div class="absolute top-0 left-0 h-full w-full overflow-hidden">
+              <img data-speed="0.9" class="h-full w-full object-cover object-center" data-src="./Images/d3.jpeg" alt=""
+                style="min-height:100%; transform:scale(1.12)" />
+            </div>
+            <div class="absolute top-0 left-0 h-full w-full" style="background:rgba(0,0,0,0.25)"></div>
+            <div class="relative z-10 px-[2vw] md:px-[1.5vw] pt-[10vw] md:pt-[5vw] pb-[10vw] md:pb-[5vw]">
+              <div class="skills-title-wrap overflow-hidden mb-[6vw] md:mb-[3vw]">
+                <h3 class="skills-title text-white text-[10vw] md:text-[5.7vw] leading-[1.2]">Tech <span>Skills</span>
+                </h3>
+              </div>
+              <div class="skills-grid grid grid-cols-1 md:grid-cols-2 gap-[0vw]">
+                <div class="skill-row border-t border-white/10 py-[4vw] md:py-[2vw] pr-[0vw] md:pr-[4vw]">
+                  <h4
+                    class="text-white/35 text-[2.8vw] md:text-[0.8vw] tracking-widest uppercase mb-[2.5vw] md:mb-[1.2vw]">
+                    Frontend</h4>
+                  <div class="flex flex-wrap gap-[2vw] md:gap-[0.6vw]">
+                    <span class="skill-tag">React</span><span class="skill-tag">Angular</span><span
+                      class="skill-tag">Next.js</span><span class="skill-tag">JavaScript (ES6+)</span><span
+                      class="skill-tag">Tailwind CSS</span><span class="skill-tag">Bootstrap</span><span
+                      class="skill-tag">Material UI</span>
+                  </div>
+                </div>
+                <div class="skill-row border-t border-white/10 py-[4vw] md:py-[2vw] pl-[0vw] md:pl-[4vw]">
+                  <h4
+                    class="text-white/35 text-[2.8vw] md:text-[0.8vw] tracking-widest uppercase mb-[2.5vw] md:mb-[1.2vw]">
+                    Backend & APIs</h4>
+                  <div class="flex flex-wrap gap-[2vw] md:gap-[0.6vw]">
+                    <span class="skill-tag">Node.js</span><span class="skill-tag">Express.js</span><span
+                      class="skill-tag">REST APIs</span><span class="skill-tag">JWT Auth</span><span
+                      class="skill-tag">WebSockets</span><span class="skill-tag">Socket.io</span>
+                  </div>
+                </div>
+                <div class="skill-row border-t border-white/10 py-[4vw] md:py-[2vw] pr-[0vw] md:pr-[4vw]">
+                  <h4
+                    class="text-white/35 text-[2.8vw] md:text-[0.8vw] tracking-widest uppercase mb-[2.5vw] md:mb-[1.2vw]">
+                    Databases</h4>
+                  <div class="flex flex-wrap gap-[2vw] md:gap-[0.6vw]">
+                    <span class="skill-tag">MongoDB</span><span class="skill-tag">PostgreSQL</span><span
+                      class="skill-tag">MySQL</span><span class="skill-tag">Firebase</span><span
+                      class="skill-tag">Supabase</span>
+                  </div>
+                </div>
+                <div class="skill-row border-t border-white/10 py-[4vw] md:py-[2vw] pl-[0vw] md:pl-[4vw]">
+                  <h4
+                    class="text-white/35 text-[2.8vw] md:text-[0.8vw] tracking-widest uppercase mb-[2.5vw] md:mb-[1.2vw]">
+                    DevOps & Cloud</h4>
+                  <div class="flex flex-wrap gap-[2vw] md:gap-[0.6vw]">
+                    <span class="skill-tag">Azure</span><span class="skill-tag">Docker</span><span
+                      class="skill-tag">GitHub Actions</span><span class="skill-tag">CI/CD</span><span
+                      class="skill-tag">Vercel</span><span class="skill-tag">Netlify</span><span class="skill-tag">AWS
+                      Lambda</span>
+                  </div>
+                </div>
+                <div class="skill-row border-t border-white/10 py-[4vw] md:py-[2vw] md:col-span-2">
+                  <h4
+                    class="text-white/35 text-[2.8vw] md:text-[0.8vw] tracking-widest uppercase mb-[2.5vw] md:mb-[1.2vw]">
+                    Caching, Messaging & Integrations</h4>
+                  <div class="flex flex-wrap gap-[2vw] md:gap-[0.6vw]">
+                    <span class="skill-tag">Redis</span><span class="skill-tag">Apache Kafka</span><span
+                      class="skill-tag">Stripe</span><span class="skill-tag">Twilio</span><span
+                      class="skill-tag">SMTP</span><span class="skill-tag">MCP Server</span><span class="skill-tag">n8n
+                      Automation</span><span class="skill-tag">FCM</span>
+                  </div>
+                </div>
+                <div class="border-t border-white/10 md:col-span-2"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── End Experience Sections ── -->
+
+          <div id="cover" class="page3 relative h-[80vh] md:h-screen w-full">
+            <div class="image-div h-screen overflow-hidden w-full">
+              <img data-speed="0.6" class="h-screen w-full scale-[1] object-cover"
+                data-src="./Images/Awards-darshan.jpeg" alt="" />
+            </div>
+            <div
+              class="upperdiv px-[2vw] md:px-[1.5vw] py-[1.5vw] flex items-center justify-center h-full w-full absolute z-[20] top-0 left-0">
+              <div class="heading">
+                <h3 class="text-white text-center leading-[1.05] text-[10vw] md:text-[6vw]">
+                  Achievements <span> & Recognition</span>
+                </h3>
+              </div>
+            </div>
+            <div data-speed="0.86"
+              class="absolute top-[17%] md:top-[23%] left-[10%] md:left-[15%] w-[30vw] md:w-[15vw] h-[44vw] md:h-[22vw] movable">
+              <div class="upperImage h-[90%] w-full">
+                <img class="h-full w-full object-cover" data-src="./Images/youngJury.png" alt="" />
+              </div>
+              <div class="lowertext h-[10%] w-full flex items-center justify-center text-center">
+                <h3 class="text-white text-[3.5vw] md:text-[1.7vw]">
+                  Azure Fundamentals — AZ-900
+                </h3>
+              </div>
+            </div>
+            <div data-speed="0.89"
+              class="absolute z-[25] top-[60%] md:top-[40%] right-[10%] md:right-[15%] w-[24vw] md:w-[14vw] h-[36vw] md:h-[20vw] movable">
+              <div class="upperImage h-[90%] w-full">
+                <img class="h-full w-full object-cover" data-src="./Images/honors.png" alt="" />
+              </div>
+              <div class="lowertext h-[10%] w-full flex items-center justify-center text-center">
+                <h3 class="text-white text-[2.7vw] md:text-[1.6vw]">
+                  Azure Developer Associate — AZ-204
+                </h3>
+              </div>
+            </div>
+            <div data-speed="0.95"
+              class="absolute top-[8%] right-[10%] md:right-[35%] w-[35vw] md:w-[18vw] h-[27vw] md:h-[14vw] movable">
+              <div class="upperImage bg-blue-600 h-[90%] w-full">
+                <img class="h-full opacity-[0.93] w-full object-cover" data-src="./Images/IITGn.png" alt="" />
+              </div>
+              <div class="lowertext h-[10%] w-full flex items-center justify-center text-center">
+                <h3 class="text-white text-[2.8vw] md:text-[1.4vw]">
+                  DevOps Engineer Expert — AZ-400
+                </h3>
+              </div>
+            </div>
+            <div data-speed="0.93"
+              class="absolute top-[70%] md:top-[60%] left-[12%] md:left-[35%] w-[36vw] md:w-[17vw] h-[29vw] md:h-[13vw] movable">
+              <div class="upperImage bg-blue-600 h-[90%] w-full">
+                <img class="h-full opacity-[0.93] w-full object-cover" data-src="./Images/goaPolice.png" alt="" />
+              </div>
+              <div class="lowertext h-[10%] w-full flex items-center justify-center text-center">
+                <h3 class="text-white text-[2.7vw] md:text-[1.2vw]">
+                  5+ Production Platforms Delivered
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div id="contact" class="page4 relative w-full">
+            <div class="image-div absolute top-0 left-0 h-full min-h-screen overflow-hidden w-full">
+              <img class="h-full min-h-screen w-full object-cover" data-src="./Images/footer.png" alt="" />
+            </div>
+            <div class="overview relative px-[2vw] md:px-[1.5vw] pt-[8vw] md:pt-[4vw] pb-[0vw] w-full flex flex-col">
+              <!-- Contact columns -->
+              <div class="socials w-full flex md:flex-row flex-col items-start justify-between gap-[6vw] md:gap-[0vw]">
+                <div class="first flex flex-col gap-[4vw] md:gap-[2vw] w-full md:w-[30%]">
+                  <h4 class="text-white text-[3.8vw] md:text-[1.2vw] leading-[1.18]">
+                    Got a project that needs a solid backend or real-time
+                    features? Let's build it together. Whether you're a
+                    startup, a tech team, or an enterprise — I'd love to
+                    turn your idea into a production-ready system.
+                  </h4>
+                  <a href="mailto:darshankumad1234@gmail.com?subject=Let's%20Create%20Something%20Together"
+                    class="buttondiv w-fit border border-white cursor-pointer px-[4vw] md:px-[2vw] py-[1.5vw] md:py-[0.65vw]">
+                    <div class="links cursor-pointer h-[1rem] md:h-[1.3rem] overflow-hidden">
+                      <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">Let's Collaborate</h2>
+                      <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">Let's Collaborate</h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="second flex flex-col gap-[4vw] md:gap-[2vw] w-full md:w-[30%]">
+                  <h4 class="text-white text-[3.8vw] md:text-[1.2vw] leading-[1.18]">
+                    If you're a company looking for a Full-Stack Developer
+                    who delivers scalable, cloud-native applications with
+                    real-world production experience — I'm always open
+                    to exciting opportunities.
+                  </h4>
+                  <a href="mailto:darshankumad1234@gmail.com?subject=We%27d%20Love%20to%20Hire%20You"
+                    class="buttondiv w-fit border border-white cursor-pointer px-[4vw] md:px-[2vw] py-[1.5vw] md:py-[0.65vw] bg-[#242A23]">
+                    <div class="links cursor-pointer h-[1rem] md:h-[1.3rem] overflow-hidden">
+                      <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">Hire me</h2>
+                      <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">Hire me</h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="third flex flex-col gap-[4vw] md:gap-[2vw] w-full md:w-[30%]">
+                  <h4 class="text-white text-[3.8vw] md:text-[1.2vw] leading-[1.18]">
+                    You can reach me through any of my socials below or drop
+                    me a message. I'd be happy to connect, collaborate, or
+                    just chat about new ideas.
+                  </h4>
+                  <div class="socialslink flex items-center gap-[2.5vw] md:gap-[1vw]">
+                    <a target="_blank" href="https://www.linkedin.com/in/darshan-kumar-648697299/"
+                      class="buttondiv border border-white cursor-pointer px-[4vw] md:px-[1.5vw] py-[1.5vw] md:py-[0.55vw]">
+                      <div class="links cursor-pointer h-[1rem] md:h-[1.3rem] overflow-hidden">
+                        <h2 class="text-white text-[3.5vw] md:text-[1.1vw] leading-[1]">LinkedIn</h2>
+                        <h2 class="text-white text-[3.5vw] md:text-[1.1vw] leading-[1]">LinkedIn</h2>
+                      </div>
+                    </a>
+                    <a target="_blank" href="https://github.com/RDarshankumar"
+                      class="buttondiv border border-white cursor-pointer px-[4vw] md:px-[1.5vw] py-[1.5vw] md:py-[0.55vw]">
+                      <div class="links cursor-pointer h-[1rem] md:h-[1.3rem] overflow-hidden">
+                        <h2 class="text-white text-[3.5vw] md:text-[1.1vw] leading-[1]">GitHub</h2>
+                        <h2 class="text-white text-[3.5vw] md:text-[1.1vw] leading-[1]">GitHub</h2>
+                      </div>
+                    </a>
+                    <a href="mailto:darshankumad1234@gmail.com"
+                      class="buttondiv border border-white cursor-pointer px-[4vw] md:px-[1.5vw] py-[1.5vw] md:py-[0.55vw] bg-[#242A23]">
+                      <div class="links cursor-pointer h-[1rem] md:h-[1.3rem] overflow-hidden">
+                        <h2 class="text-white text-[3.5vw] md:text-[1.1vw] leading-[1]">Email</h2>
+                        <h2 class="text-white text-[3.5vw] md:text-[1.1vw] leading-[1]">Email</h2>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Footer stamp -->
+              <div class="contactlower w-full mt-[10vw] md:mt-[6vw]">
+                <!-- Meta row -->
+                <div class="w-full flex items-center justify-between pb-[2vw] md:pb-[1vw]">
+                  <h4 class="text-white text-[3vw] md:text-[0.95vw] leading-[1] opacity-40 tracking-widest uppercase">
+                    Full-Stack Developer · Karachi, Pakistan
+                  </h4>
+                  <h4 class="text-white text-[3vw] md:text-[0.95vw] leading-[1] opacity-40 tracking-widest uppercase">
+                    © 2026 · Made with love 🫶
+                  </h4>
+                </div>
+                <!-- Divider -->
+                <div class="w-full h-[1px] bg-white opacity-20 mb-[4vw] md:mb-[2vw]"></div>
+                <!-- Get In Touch — comes after the line -->
+                <h3 class="text-[10vw] md:text-[6.5vw] text-white leading-[1] mb-[4vw] md:mb-[2vw]">
+                  Get In <span>Touch</span>
+                </h3>
+                <!-- Contact form -->
+                <form action="mailto:darshankumad1234@gmail.com" method="POST" enctype="text/plain"
+                  class="contact-form w-full md:w-[62%] mb-[6vw] md:mb-[3vw]">
+                  <div class="flex flex-col md:flex-row gap-[6vw] md:gap-[2vw] mb-[4vw] md:mb-[2vw]">
+                    <div class="flex-1 flex flex-col gap-[1.5vw] md:gap-[0.6vw]">
+                      <label class="text-white text-[2.8vw] md:text-[0.8vw] tracking-widest uppercase"
+                        style="opacity:0.4">Name</label>
+                      <input type="text" name="name" placeholder="Your name"
+                        class="bg-transparent border-b border-white text-white text-[3.5vw] md:text-[1.1vw] pb-[2vw] md:pb-[0.7vw] outline-none w-full"
+                        style="border-color:rgba(255,255,255,0.25); color:white;"
+                        onfocus="this.style.borderColor='rgba(255,255,255,0.7)'"
+                        onblur="this.style.borderColor='rgba(255,255,255,0.25)'" />
+                    </div>
+                    <div class="flex-1 flex flex-col gap-[1.5vw] md:gap-[0.6vw]">
+                      <label class="text-white text-[2.8vw] md:text-[0.8vw] tracking-widest uppercase"
+                        style="opacity:0.4">Email</label>
+                      <input type="email" name="email" placeholder="your@email.com"
+                        class="bg-transparent border-b border-white text-white text-[3.5vw] md:text-[1.1vw] pb-[2vw] md:pb-[0.7vw] outline-none w-full"
+                        style="border-color:rgba(255,255,255,0.25); color:white;"
+                        onfocus="this.style.borderColor='rgba(255,255,255,0.7)'"
+                        onblur="this.style.borderColor='rgba(255,255,255,0.25)'" />
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-[1.5vw] md:gap-[0.6vw] mb-[5vw] md:mb-[2vw]">
+                    <label class="text-white text-[2.8vw] md:text-[0.8vw] tracking-widest uppercase"
+                      style="opacity:0.4">Message</label>
+                    <textarea name="message" rows="3" placeholder="Tell me about your project..."
+                      class="bg-transparent border-b border-white text-white text-[3.5vw] md:text-[1.1vw] pb-[2vw] md:pb-[0.7vw] outline-none resize-none w-full"
+                      style="border-color:rgba(255,255,255,0.25); color:white;"
+                      onfocus="this.style.borderColor='rgba(255,255,255,0.7)'"
+                      onblur="this.style.borderColor='rgba(255,255,255,0.25)'"></textarea>
+                  </div>
+                  <button type="submit"
+                    class="buttondiv border border-white cursor-pointer px-[5vw] md:px-[2.5vw] py-[2vw] md:py-[0.75vw] bg-[#242A23]">
+                    <div class="links cursor-pointer h-[1rem] md:h-[1.3rem] overflow-hidden">
+                      <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">Send Message</h2>
+                      <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">Send Message</h2>
+                    </div>
+                  </button>
+                </form>
+                <!-- Big name stamp -->
+                <div class="w-full h-[1px] bg-white opacity-10 mb-[0.5vw]"></div>
+                <h3 class="text-white leading-[0.82] text-[20vw]">
+                  Darshan <span>Kumar</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
