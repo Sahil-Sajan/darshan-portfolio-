@@ -4,6 +4,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { Flip } from "gsap/Flip";
+import { createRoot } from "react-dom/client";
+import { createElement } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const toastRoot = document.createElement("div");
+document.body.appendChild(toastRoot);
+createRoot(toastRoot).render(createElement(ToastContainer, { theme: "dark" }));
 
 gsap.registerPlugin(
   ScrollTrigger,
@@ -268,7 +276,7 @@ buttons.forEach((button, index) => {
 const projects = [
   {
     title: "SentinelKids",
-    link: "#",
+    link: "https://sentinelkids.com/en",
     year: 2025,
     tagline: "Real-time parental control, built for the modern family.",
     description: `SentinelKids is a comprehensive parental control platform built with React Native, Node.js, MongoDB, Firebase, and WebSockets.
@@ -289,7 +297,7 @@ const projects = [
   },
   {
     title: "JayaHub",
-    link: "#",
+    link: "https://jayakhub.com",
     year: 2025,
     tagline: "A complete restaurant ecosystem — from order to delivery.",
     description: `JayaHub is a full restaurant management ecosystem built on the MERN stack with PostgreSQL, Socket.io, Redis, Stripe, and Firebase.
@@ -310,7 +318,7 @@ const projects = [
   },
   {
     title: "Hospital Management",
-    link: "#",
+    link: "https://roosbrothers1865.com/en",
     year: 2025,
     tagline: "Healthcare at scale — real-time, multilingual, and cloud-native.",
     description: `A full-scale hospital management system built with Node.js, PostgreSQL, Apache Kafka, Redis, Socket.io, Stripe, Twilio, Firebase, and MCP Server.
@@ -330,23 +338,21 @@ const projects = [
     ],
   },
   {
-    title: "Klistra AI",
-    link: "#",
+    title: "Listr",
+    link: "https://listr.live/en",
     year: 2025,
-    tagline: "AI-powered real estate automation that runs itself.",
-    description: `Klistra AI is an intelligent real estate automation platform built with Node.js, n8n, MCP Server, PostgreSQL, and React.
+    tagline: "Generate leads, connect every channel, close faster.",
+    description: `Listr is a lead-generation platform built with Node.js, n8n, MCP Server, PostgreSQL, and React.
 
-    The platform uses n8n workflows to automate listing management, client follow-ups, and data pipelines — while the MCP server integration enables AI-powered query handling.
-
-    Norata serves as the admin portal where managers oversee listings and monitor automation pipelines in real time, dramatically reducing manual overhead.`,
+    Users generate and manage leads through integrations with platforms like Facebook and TikTok, with n8n workflows automating follow-ups and data pipelines while the MCP server integration enables AI-powered query handling.`,
     techStack: ["Node.js", "n8n", "MCP Server", "PostgreSQL", "React"],
     highlights: [
-      "n8n workflow automation for real estate pipelines",
+      "Facebook and TikTok integrations for lead generation",
+      "n8n workflow automation for lead pipelines",
       "MCP server integration for AI-powered query handling",
-      "Norata admin portal for listing and automation management",
     ],
     recognition: [
-      "AI-powered platform reducing manual operations significantly",
+      "Lead-gen platform integrating major social ad channels",
       "Demonstrates modern workflow automation with n8n and MCP",
     ],
   },
@@ -656,7 +662,6 @@ projectBox.forEach((box, index) => {
 const about = document.querySelector("#aboutlink");
 const project = document.querySelector("#projectlink");
 const exp = document.querySelector("#explink");
-const reco = document.querySelector("#recolink");
 const contact = document.querySelector("#contactlink");
 
 about.addEventListener("click", () => {
@@ -668,11 +673,25 @@ project.addEventListener("click", () => {
 exp.addEventListener("click", () => {
   gsap.to(window, { duration: 0.8, scrollTo: "#experience", ease: "power2.out" });
 });
-reco.addEventListener("click", () => {
-  gsap.to(window, { duration: 0.8, scrollTo: "#cover", ease: "power2.out" });
-});
 contact.addEventListener("click", () => {
   gsap.to(window, { duration: 0.8, scrollTo: "#contact", ease: "power2.out" });
+});
+
+// ── Contact form: confirm send + persist to sessionStorage ──
+const contactForm = document.querySelector(".contact-form");
+
+contactForm.addEventListener("submit", () => {
+  const entry = {
+    name: contactForm.name.value,
+    email: contactForm.email.value,
+    message: contactForm.message.value,
+    sentAt: new Date().toISOString(),
+  };
+  const history = JSON.parse(sessionStorage.getItem("sentMessages") || "[]");
+  history.push(entry);
+  sessionStorage.setItem("sentMessages", JSON.stringify(history));
+
+  toast.success("Message sent!");
 });
 
 // ── Experience section animations ──
